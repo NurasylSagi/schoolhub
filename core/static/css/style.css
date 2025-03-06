@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.navbar {
+    background-color: #343a40 !important; /* Более мягкий темный цвет */
+    padding: 10px;
+}
+
+.navbar-toggler {
+    height: 40px !important; /* Уменьшает высоту кнопки */
+    width: 60px !important;
+}
+
+.navbar-nav {
+    background-color: #212529; /* Цвет фона для выпадающего меню */
+    padding: 10px;
+}
