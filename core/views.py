@@ -77,6 +77,10 @@ def student_dashboard(request):
 def teacher_dashboard(request):
     return render(request, 'core/teacher_dashboard.html')
 
+@login_required
+def schedule_dashboard(request):
+    return render(request, 'core/schedule_dashboard.html')
+
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 
