@@ -1,0 +1,55 @@
+    <div class="px-sm-2 px-0 bg-dark">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <span class="fs-5 d-none d-sm-inline">SchoolHub</span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                <li class="nav-item">
+                    <a href="{% url 'dashboard' %}" class="nav-link align-middle px-0 text-white">
+                        <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'student_dashboard' %}" class="nav-link px-0 align-middle text-white">
+                        <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Sign out
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="exampleModalLabel">Подтверждение выхода</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body font-weight-bold text-dark">
+                                    Вы уверены, что хотите выйти?
+                                </div>
+                                <div class="modal-footer hstack gap-3">
+                                    <div class="bg-light border-0">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                                    </div>
+                                    <div class="bg-light border-0">
+                                        <a href="{% url 'logout' %}" class="btn btn-danger font-weight-bold">Да, выйти</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <br><br><br><br><br><br>
+                <li>
+                    <a href="{% url 'admin_dashboard' %}">admin</a>
+                </li>
+                <li>
+                    <a href="{% url 'teacher_dashboard' %}">teacher</a>
+                </li>
+                <li>
+                    <a href="{% url 'student_dashboard' %}">student</a>
+                </li>
+            </ul>
+        </div>
+    </div>

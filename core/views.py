@@ -70,16 +70,16 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def student_dashboard(request):
-    return render(request, 'core/student_dashboard.html')
+    return render(request, 'core/student/student_dashboard.html')
 
 
 @login_required
 def teacher_dashboard(request):
-    return render(request, 'core/teacher_dashboard.html')
+    return render(request, 'core/teacher/teacher_dashboard.html')
 
 @login_required
-def schedule_dashboard(request):
-    return render(request, 'core/schedule_dashboard.html')
+def admin_dashboard(request):
+    return render(request, 'core/admin/admin_dashboard.html')
 
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
@@ -92,4 +92,4 @@ def dashboard(request):
 from django.shortcuts import render
 
 def dashboard(request):
-    return render(request, "dashboard.html")
+    return render(request, "core/dashboard.html")
