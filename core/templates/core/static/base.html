@@ -16,12 +16,12 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Боковое меню -->
-                <div class="col-auto bg-dark min-vh-100">
+                <div class="col-auto min-vh-100 px-0" style="background: rgba(7, 47, 124, 1);">
                     {% include 'core/static/sidebar.html' %}
                 </div>
 
                 <!-- Основной контент -->
-                <div class="col" style="padding: 0px;">
+                <div class="col" style="padding: 0px; background: rgba(157, 177, 247, 1);">
                     {% include 'core/static/header.html' %}
                     <div class="p-4">
                         {% block content %}{% endblock %}
