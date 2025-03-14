@@ -53,9 +53,12 @@ WSGI_APPLICATION = 'schoolhub.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'schoolhub',
+        'USER': 'uali',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -72,6 +75,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+
 STATICFILES_DIRS = [BASE_DIR / "core/static"]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
